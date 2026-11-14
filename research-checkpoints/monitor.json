@@ -1,0 +1,8 @@
+{
+  "repos": [
+    {"repo": "wnmqaubb08/globalmetin", "note": "Birincil: NEVER DECLARED soyu (Titan2Client, VS2015 v140_xp)"},
+    {"repo": "davidkm2/globalmetin", "note": "globalmetin aynasi"},
+    {"repo": "catalin1234121312/Metin2-Astralis", "note": "astra adayi - repo su an bos; source pushlanirsa zip alinacak"},
+    {"repo": "0xByteDeveloper/SolveMe", "note": "Checkpoint hedef repo - disaridan commit gelirse zip"}
+  ]
+}
