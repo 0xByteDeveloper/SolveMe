@@ -1,25 +1,25 @@
 === Metin2 'NEVER DECLARED' arastirmasi - checkpoint durumu ===
-Olusturuldu : 2026-11-14 03:29:02 (Europe/Istanbul)
-Checkpoint  : #4
+Olusturuldu : 2026-11-14 03:29:50 (Europe/Istanbul)
+Checkpoint  : #5
 Hedef repo  : github.com/0xByteDeveloper/SolveMe (research-checkpoints/)
 Guncel adim : S4 - lineage client exe bul (ör. zaxerrrr-dot/mt2009-sp-plus client-patches/exe/ tree'si; NakiuS/Tiberiu/ikevin repo tree'lerinde .exe ara) + /home/z/my-project/pedetect/build/pedetect_cli ile Rich header analizi; ayrıca SendSequence gövdesi için EterLib NetStream .cod ara → research/FINDINGS_03_binaries.md
 
 --- Izlenen repo snapshot durumu (son 15 satir) ---
-== 2026-11-14 00:21:29 ==
-wnmqaubb08/globalmetin: degisiklik yok (d1a21b54)
-davidkm2/globalmetin: degisiklik yok (d1a21b54)
-catalin1234121312/Metin2-Astralis: empty
-0xByteDeveloper/SolveMe: empty
-== 2026-11-14 00:21:54 ==
-wnmqaubb08/globalmetin: degisiklik yok (d1a21b54)
-davidkm2/globalmetin: degisiklik yok (d1a21b54)
-catalin1234121312/Metin2-Astralis: empty
-0xByteDeveloper/SolveMe: baseline kaydedildi (76c7d154)
 == 2026-11-14 00:29:02 ==
 wnmqaubb08/globalmetin: degisiklik yok (d1a21b54)
 davidkm2/globalmetin: degisiklik yok (d1a21b54)
 catalin1234121312/Metin2-Astralis: empty
 0xByteDeveloper/SolveMe: YENI SNAPSHOT 0xByteDeveloper__SolveMe__0ed9dcc1__20261114_002901.zip (127 KB) [0ed9dcc1]
+== 2026-11-14 00:29:46 ==
+wnmqaubb08/globalmetin: degisiklik yok (d1a21b54)
+davidkm2/globalmetin: degisiklik yok (d1a21b54)
+catalin1234121312/Metin2-Astralis: http409
+0xByteDeveloper/SolveMe: bot commitleri (8813f691), snapshot atlandi
+== 2026-11-14 00:29:50 ==
+wnmqaubb08/globalmetin: degisiklik yok (d1a21b54)
+davidkm2/globalmetin: degisiklik yok (d1a21b54)
+catalin1234121312/Metin2-Astralis: http409
+0xByteDeveloper/SolveMe: bot commitleri (8813f691), snapshot atlandi
 
 --- Nerede kaldik (STATE.md) ---
 # STATE — Metin2 "CSingleton::Instance() NEVER DECLARED" araştırması
