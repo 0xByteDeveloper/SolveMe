@@ -1,13 +1,18 @@
 === Metin2 'NEVER DECLARED' arastirmasi - checkpoint durumu ===
-Olusturuldu : 2026-11-14 03:18:32 (Europe/Istanbul)
-Checkpoint  : #1
+Olusturuldu : 2026-11-14 03:21:29 (Europe/Istanbul)
+Checkpoint  : #2
 Hedef repo  : github.com/0xByteDeveloper/SolveMe (research-checkpoints/)
-Guncel adim : S2 - klasik soy toolset tablosu (FALLEN1D/sistem branch bul, szymorek99/client_files_longju2, Hammer1337/HammerM2, DrLegendy/LegendySF-V2, hasanmacit/Directx9-Update: Singleton.h + vcproj toolset + SendSequence tanımı) → research/REPOS_TABLE.md
+Guncel adim : S3b - nak_PhaseGame.cod (1.9MB, yerelde scripts/research/) tam tarama: SendSequence proc'u listelenmis mi, hangi Send* proc'larinda call SendSequence kalir; sonrasinda S4 (lineage exe + pedetect_cli Rich header analizi)
 
 --- Izlenen repo snapshot durumu (son 15 satir) ---
 == 2026-11-14 00:18:32 ==
 wnmqaubb08/globalmetin: baseline kaydedildi (d1a21b54)
 davidkm2/globalmetin: baseline kaydedildi (d1a21b54)
+catalin1234121312/Metin2-Astralis: empty
+0xByteDeveloper/SolveMe: empty
+== 2026-11-14 00:21:29 ==
+wnmqaubb08/globalmetin: degisiklik yok (d1a21b54)
+davidkm2/globalmetin: degisiklik yok (d1a21b54)
 catalin1234121312/Metin2-Astralis: empty
 0xByteDeveloper/SolveMe: empty
 
@@ -18,13 +23,14 @@ Bu dosya periyodik checkpoint döngüsünün (cron, her 5 dk) ana kontrol dosyas
 Her turda: ROADMAP'teki ilk `[ ]` adımını uygula → bulguları ilgili research/*.md'ye EKLE →
 NEXT STEP satırını güncelle → `bash /home/z/my-project/scripts/checkpoint_run.sh` çalıştır → kısa özet ver.
 
-NEXT STEP: S2 - klasik soy toolset tablosu (FALLEN1D/sistem branch bul, szymorek99/client_files_longju2, Hammer1337/HammerM2, DrLegendy/LegendySF-V2, hasanmacit/Directx9-Update: Singleton.h + vcproj toolset + SendSequence tanımı) → research/REPOS_TABLE.md
+NEXT STEP: S3b - nak_PhaseGame.cod (1.9MB, yerelde scripts/research/) tam tarama: SendSequence proc'u listelenmis mi, hangi Send* proc'larinda call SendSequence kalir; sonrasinda S4 (lineage exe + pedetect_cli Rich header analizi)
 
 ## ROADMAP
 
 - [x] S1 (2026-11-14): Soy kimliği + globalmetin derleme analizi + klasik SendSequence kanıtı → research/FINDINGS_01_globalmetin_lineage.md
-- [ ] S2: Klasik soyların derleyici kimliği tablosu → research/REPOS_TABLE.md
-- [ ] S3: .cod asm artefakt analizi (rafalohaki/Metin2-Work, NakiuS/Metin2Client Distribute .cod): SendAttackPacket proc'unda call SendSequence mi inline mı? → research/FINDINGS_02_cod.md
+- [x] S2 (2026-11-14): Toolset tablosu + Singleton varyant karşılaştırması (önceki oturum artefaktları işlendi) → research/FINDINGS_01b_artifacts_evidence.md (artifacts/ klasörü repoda)
+- [x] S3a (2026-11-14): SendAttackPacket proc asm analizi: temiz `call ?SendSequence@CNetworkStream@@QAE_NXZ`; compiler 18.00.40629 (VS2013 Upd5) → FINDINGS_01b
+- [ ] S3b: nak_PhaseGame.cod tam tarama (Send* proc'larında call SendSequence dökümü; SendSequence proc'u inline mi) → research/FINDINGS_02_cod.md
 - [ ] S4: Lineage client exe bul (ör. zaxerrrr-dot/mt2009-sp-plus client-patches/exe/) + /home/z/my-project/pedetect/build/pedetect_cli ile Rich header analizi → research/FINDINGS_03_binaries.md
 - [ ] S5: "astra" PVP kaynak araması devam (repo search: astra2 / astra metin2; metin2.dev forum WebSearch) → research/ASTRA_HUNT.md
 - [ ] S6: FINAL_REPORT.md sentezi: "NEVER DECLARED binary teşhis + hangi ayarla üretilir + repro vcxproj ayarları"

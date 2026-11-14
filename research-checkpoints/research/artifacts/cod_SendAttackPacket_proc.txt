@@ -1,0 +1,95 @@
+?SendAttackPacket@CPythonNetworkStream@@QAE_NIK@Z PROC	; CPythonNetworkStream::SendAttackPacket, COMDAT
+; _this$ = ecx
+
+; 2504 : {
+
+  00000	55		 push	 ebp
+  00001	8b ec		 mov	 ebp, esp
+  00003	83 ec 08	 sub	 esp, 8
+  00006	56		 push	 esi
+  00007	8b f1		 mov	 esi, ecx
+
+; 2505 : 	if (!__CanActMainInstance())
+
+  00009	e8 00 00 00 00	 call	 ?__CanActMainInstance@CPythonNetworkStream@@IAE_NXZ ; CPythonNetworkStream::__CanActMainInstance
+  0000e	84 c0		 test	 al, al
+  00010	75 09		 jne	 SHORT $LN2@SendAttack
+
+; 2506 : 		return true;
+
+  00012	b0 01		 mov	 al, 1
+  00014	5e		 pop	 esi
+
+; 2528 : }
+
+  00015	8b e5		 mov	 esp, ebp
+  00017	5d		 pop	 ebp
+  00018	c2 08 00	 ret	 8
+$LN2@SendAttack:
+
+; 2507 : 
+; 2508 : #ifdef ATTACK_TIME_LOG
+; 2509 : 	static DWORD prevTime = timeGetTime();
+; 2510 : 	DWORD curTime = timeGetTime();
+; 2511 : 	TraceError("TIME: %.4f(%.4f) ATTACK_PACKET: %d TARGET: %d", curTime/1000.0f, (curTime-prevTime)/1000.0f, uMotAttack, dwVIDVictim);
+; 2512 : 	prevTime = curTime;
+; 2513 : #endif
+; 2514 : 
+; 2515 : 	TPacketCGAttack kPacketAtk;
+; 2516 : 
+; 2517 : 	kPacketAtk.header = HEADER_CG_ATTACK;
+; 2518 : 	kPacketAtk.bType = uMotAttack;
+
+  0001b	8b 45 08	 mov	 eax, DWORD PTR _uMotAttack$[ebp]
+  0001e	88 45 f9	 mov	 BYTE PTR _kPacketAtk$[ebp+1], al
+
+; 2519 : 	kPacketAtk.dwVictimVID = dwVIDVictim;
+
+  00021	8b 45 0c	 mov	 eax, DWORD PTR _dwVIDVictim$[ebp]
+  00024	89 45 fa	 mov	 DWORD PTR _kPacketAtk$[ebp+2], eax
+
+; 2520 : 
+; 2521 : 	if (!SendSpecial(sizeof(kPacketAtk), &kPacketAtk))
+
+  00027	8d 45 f8	 lea	 eax, DWORD PTR _kPacketAtk$[ebp]
+  0002a	50		 push	 eax
+  0002b	51		 push	 ecx
+  0002c	8b ce		 mov	 ecx, esi
+  0002e	c6 45 f8 02	 mov	 BYTE PTR _kPacketAtk$[ebp], 2
+  00032	e8 00 00 00 00	 call	 ?SendSpecial@CPythonNetworkStream@@QAE_NHPAX@Z ; CPythonNetworkStream::SendSpecial
+  00037	84 c0		 test	 al, al
+  00039	75 16		 jne	 SHORT $LN1@SendAttack
+
+; 2522 : 	{
+; 2523 : 		Tracen("Send Battle Attack Packet Error");
+
+  0003b	68 00 00 00 00	 push	 OFFSET ??_C@_0CA@IBBLODAF@Send?5Battle?5Attack?5Packet?5Error?$AA@
+  00040	e8 00 00 00 00	 call	 ?Tracen@@YAXPBD@Z	; Tracen
+  00045	83 c4 04	 add	 esp, 4
+
+; 2524 : 		return false;
+
+  00048	32 c0		 xor	 al, al
+  0004a	5e		 pop	 esi
+
+; 2528 : }
+
+  0004b	8b e5		 mov	 esp, ebp
+  0004d	5d		 pop	 ebp
+  0004e	c2 08 00	 ret	 8
+$LN1@SendAttack:
+
+; 2525 : 	}
+; 2526 : 
+; 2527 : 	return SendSequence();
+
+  00051	8b ce		 mov	 ecx, esi
+  00053	e8 00 00 00 00	 call	 ?SendSequence@CNetworkStream@@QAE_NXZ ; CNetworkStream::SendSequence
+  00058	5e		 pop	 esi
+
+; 2528 : }
+
+  00059	8b e5		 mov	 esp, ebp
+  0005b	5d		 pop	 ebp
+  0005c	c2 08 00	 ret	 8
+?SendAttackPacket@CPythonNetworkStream@@QAE_NIK@Z ENDP	
