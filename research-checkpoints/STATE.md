@@ -4,7 +4,7 @@ Bu dosya periyodik checkpoint döngüsünün (cron, her 5 dk) ana kontrol dosyas
 Her turda: ROADMAP'teki ilk `[ ]` adımını uygula → bulguları ilgili research/*.md'ye EKLE →
 NEXT STEP satırını güncelle → `bash /home/z/my-project/scripts/checkpoint_run.sh` çalıştır → kısa özet ver.
 
-NEXT STEP: S4 - lineage client exe bul (ör. zaxerrrr-dot/mt2009-sp-plus client-patches/exe/ tree'si; NakiuS/Tiberiu/ikevin repo tree'lerinde .exe ara) + /home/z/my-project/pedetect/build/pedetect_cli ile Rich header analizi; ayrıca SendSequence gövdesi için EterLib NetStream .cod ara → research/FINDINGS_03_binaries.md
+NEXT STEP: S5 - "astra" PVP kaynak araması: repo search (astra2 metin2, astra client source), code search ("astra" metin2), WebSearch metin2.dev/m2dev forumları → research/ASTRA_HUNT.md
 
 ## ROADMAP
 
@@ -12,7 +12,7 @@ NEXT STEP: S4 - lineage client exe bul (ör. zaxerrrr-dot/mt2009-sp-plus client-
 - [x] S2 (2026-11-14): Toolset tablosu + Singleton varyant karşılaştırması (önceki oturum artefaktları işlendi) → research/FINDINGS_01b_artifacts_evidence.md (artifacts/ klasörü repoda)
 - [x] S3a (2026-11-14): SendAttackPacket proc asm analizi: temiz `call ?SendSequence@CNetworkStream@@QAE_NXZ`; compiler 18.00.40629 (VS2013 Upd5) → FINDINGS_01b
 - [x] S3b (2026-11-14): nak_PhaseGame.cod tam tarama: 240 proc, SendSequence TU'da değil, 53 call SendSequence, 4 istisna (SendSpecial/SyncPosition/ExchangeItemDel/DragonSoulRefine); binary teşhis kuralı → research/FINDINGS_02_cod.md + cod_scan_result.json (araç: scripts/cod_scan.py)
-- [ ] S4: Lineage client exe bul (ör. zaxerrrr-dot/mt2009-sp-plus client-patches/exe/) + /home/z/my-project/pedetect/build/pedetect_cli ile Rich header analizi → research/FINDINGS_03_binaries.md
+- [x] S4 (2026-11-14): Gerçek PVP client binary analizi (rafalohaki/Metin2-Work): MAIN=VS2019 (linker 14.28, 2021, Kraizy edition, PYTHON27, /GS+RTTI+/MT, Release), CONFIG=VS6 (2006); MAIN'de "NEVER DECLARED" YOK ama CSingleton RTTI descriptor'ları VAR → assert-only soy → research/FINDINGS_03_binaries.md + pedetect_*.json
 - [ ] S5: "astra" PVP kaynak araması devam (repo search: astra2 / astra metin2; metin2.dev forum WebSearch) → research/ASTRA_HUNT.md
 - [ ] S6: FINAL_REPORT.md sentezi: "NEVER DECLARED binary teşhis + hangi ayarla üretilir + repro vcxproj ayarları"
 

@@ -1,0 +1,52 @@
+{
+  "tool": "PeDetect MVP v0.2",
+  "file": "/home/z/my-project/scripts/research/bin_samples/mt2client_main.exe",
+  "ok": true,
+  "size": 5515264,
+  "md5": "32843ce30df84953bc74b83ed208ff85",
+  "sha1": "16a82bbda9e84c6a1331189e7ab8ba8f3852bc00",
+  "sha256": "620a2d430a9c75722f7aa2740eb17d11a2ced575e49fc9e31ad68634e58bd5c6",
+  "crc32": "812DB75C",
+  "header": {
+    "machine": "x86 (i386/i486)",
+    "machine_raw": "0x014C",
+    "pe32plus": false,
+    "is_dll": false,
+    "subsystem": "WINDOWS GUI",
+    "entrypoint_rva": "0x32206C",
+    "image_base": "0x400000",
+    "linker": "14.28",
+    "timestamp": 1612227122
+  },
+  "compiler": {
+    "family": "MSVC",
+    "product": "Microsoft Visual C++ (Rich: MSVC (build 41118))",
+    "version": "19.x build 41118",
+    "confidence": 92,
+    "evidence": ["Rich header comp.id: prodId=0xC7 build=41118 count=4"],
+    "tr_why": "Microsoft linker'i PE'ye Rich header (DanS/Rich XOR damgasi) gomulur; bu header sadece MSVC araç zincirinde bulunur ve içinde kullanılan derleyici aracının comp.id'si (ürün kimliği + build numarası) saklanır."
+  },
+  "hints": [{"family": "Python", "confidence": 70}],
+  "languages": ["C++"],
+  "calling_conventions": {
+    "overall": "no exports to analyze",
+    "tr_overall": "Analiz edilebilir export yok.",
+    "summary": {},
+    "functions": []
+  },
+  "features": [{"id": "dep", "label": "DEP / NX (NX_COMPAT)", "value": "ON", "category": "Security", "tr_note": "Yigin-salinabilirlik korumasi acik (/NXCOMPAT): kod sayfasi veri olarak calistirilamaz."}, {"id": "aslr", "label": "ASLR (DYNAMIC_BASE)", "value": "ON", "category": "Security", "tr_note": "Yeniden konumlandirma tablolari + tercihsiz taban: her calistirmada farkli adres (/DYNAMICBASE)."}, {"id": "heva", "label": "HighEntropyVA", "value": "OFF", "category": "Security", "tr_note": "Yuksek entropi VA bayragi yok."}, {"id": "cfg", "label": "CFG (/guard:cf)", "value": "OFF", "category": "Security", "tr_note": "Control Flow Guard kapali."}, {"id": "noseh", "label": "NO_SEH", "value": "OFF", "category": "Security", "tr_note": "-"}, {"id": "gs", "label": "Stack cookie (/GS)", "value": "ON", "category": "Security", "tr_note": "Yigin bozulma tespiti: __security_check_cookie (__stack_chk_fail) korumasi aktif; her fonksiyon prologunda/epilogunda cookie kontrollu (ret oncesi ekstra kod)."}, {"id": "codeview", "label": "CodeView PDB (/Zi /DEBUG)", "value": "D:\\Metin2 Server Files\\mainline\\Kraizy Updated Edition\\Client\\Source\\M2Output\\ReleaseMetin2ProjectClientFiles.pdb", "category": "Debug", "tr_note": "PDB yolu gomulu: sembolik debug bilgisi harici dosyada (/Zi + /DEBUG)."}, {"id": "crt", "label": "CRT linking", "value": "Static (/MT)", "category": "Runtime", "tr_note": "CRT statik baglanmis (/MT): dosya buyur ama DLL bagimliligi yok."}, {"id": "ep_frame", "label": "Entry frame", "value": "ESP/FPO frame", "category": "Optimization", "tr_note": "Giris noktasi ebp cercevesi kurmuyor: FPO/esp-frame optimizasyon izi (/Oy)."}, {"id": "rtti", "label": "RTTI (/GR)", "value": "ON", "category": "Optimization", "tr_note": "Tip bilgisi stringleri (.?AV... MSVC / _ZTS... Itanium) var: RTTI acik (/GR default) - typeid/dynamic_cast tablolari binary'de."}, {"id": "tls", "label": "TLS", "value": "callbacks=0", "category": "Misc", "tr_note": "TLS dizini var (callback gorunmuyor)."}, {"id": "manifest", "label": "Manifest", "value": "Embedded", "category": "Misc", "tr_note": "SxS manifest kaynagi gomulu (/MANIFEST)."}, {"id": "rich", "label": "Rich header", "value": "key=0x8909B73B, 25 entries", "category": "Misc", "tr_note": "Microsoft linker toolstamp'i: derleme araclarinin comp.id kayitlari."}],
+  "packer": {
+    "packed": false,
+    "name": "",
+    "overall_entropy": 6.742
+  },
+  "sections": [{"name": ".text", "virtual_size": 4342276, "raw_size": 4342784, "entropy": 6.602}, {"name": ".rdata", "virtual_size": 694634, "raw_size": 694784, "entropy": 5.636}, {"name": ".data", "virtual_size": 739520, "raw_size": 235008, "entropy": 6.429}, {"name": ".data1", "virtual_size": 2272, "raw_size": 2560, "entropy": 3.620}, {"name": ".rsrc", "virtual_size": 45848, "raw_size": 46080, "entropy": 3.868}, {"name": ".reloc", "virtual_size": 192744, "raw_size": 193024, "entropy": 6.633}],
+  "imports": [{"dll": "KERNEL32.DLL", "count": 198}, {"dll": "USER32.DLL", "count": 61}, {"dll": "GDI32.DLL", "count": 20}, {"dll": "OLE32.DLL", "count": 8}, {"dll": "WINMM.DLL", "count": 4}, {"dll": "D3D8.DLL", "count": 1}, {"dll": "PYTHON27.DLL", "count": 66}, {"dll": "IMM32.DLL", "count": 12}, {"dll": "DEVIL.DLL", "count": 14}, {"dll": "VERSION.DLL", "count": 3}, {"dll": "IMAGEHLP.DLL", "count": 3}, {"dll": "GRANNY2.DLL", "count": 56}, {"dll": "MSS32.DLL", "count": 54}, {"dll": "SPEEDTREERT.DLL", "count": 50}, {"dll": "DINPUT8.DLL", "count": 1}, {"dll": "WS2_32.DLL", "count": 18}, {"dll": "DDRAW.DLL", "count": 1}, {"dll": "ADVAPI32.DLL", "count": 11}, {"dll": "SHELL32.DLL", "count": 1}, {"dll": "OLEAUT32.DLL", "count": 7}],
+  "resources": {
+    "has_version": true,
+    "has_manifest": true,
+    "version_strings": {}
+  },
+  "overlay_size": 0,
+  "authenticode_signed": false
+}

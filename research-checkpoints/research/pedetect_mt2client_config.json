@@ -1,0 +1,52 @@
+{
+  "tool": "PeDetect MVP v0.2",
+  "file": "/home/z/my-project/scripts/research/bin_samples/mt2client_config.exe",
+  "ok": true,
+  "size": 258048,
+  "md5": "855c0c21eb0fb0880347f95cc7664b8b",
+  "sha1": "22de405de788b794087db99e20459676e7739e06",
+  "sha256": "8f92922f775ad71c4eb10976fbf2cef7aa6074f0d6c51eaa7b0182a4615a87ec",
+  "crc32": "97820C19",
+  "header": {
+    "machine": "x86 (i386/i486)",
+    "machine_raw": "0x014C",
+    "pe32plus": false,
+    "is_dll": false,
+    "subsystem": "WINDOWS GUI",
+    "entrypoint_rva": "0xD475",
+    "image_base": "0x400000",
+    "linker": "6.0",
+    "timestamp": 1165251365
+  },
+  "compiler": {
+    "family": "MSVC",
+    "product": "Microsoft Visual C++ (Rich header mevcut)",
+    "version": "",
+    "confidence": 92,
+    "evidence": ["Rich header (DanS) bulundu ama comp.id cikarilamadi"],
+    "tr_why": "Microsoft linker'i PE'ye Rich header (DanS/Rich XOR damgasi) gomulur; bu header sadece MSVC araç zincirinde bulunur ve içinde kullanılan derleyici aracının comp.id'si (ürün kimliği + build numarası) saklanır."
+  },
+  "hints": [],
+  "languages": ["C++"],
+  "calling_conventions": {
+    "overall": "no exports to analyze",
+    "tr_overall": "Analiz edilebilir export yok.",
+    "summary": {},
+    "functions": []
+  },
+  "features": [{"id": "dep", "label": "DEP / NX (NX_COMPAT)", "value": "OFF", "category": "Security", "tr_note": "NX bayragi yok: bootloader DEP'i varsayilan acmaz."}, {"id": "aslr", "label": "ASLR (DYNAMIC_BASE)", "value": "OFF", "category": "Security", "tr_note": "ASLR kapali: adresler sabit, exploit icin uygun ortam."}, {"id": "heva", "label": "HighEntropyVA", "value": "OFF", "category": "Security", "tr_note": "Yuksek entropi VA bayragi yok."}, {"id": "cfg", "label": "CFG (/guard:cf)", "value": "OFF", "category": "Security", "tr_note": "Control Flow Guard kapali."}, {"id": "noseh", "label": "NO_SEH", "value": "OFF", "category": "Security", "tr_note": "-"}, {"id": "gs", "label": "Stack cookie (/GS)", "value": "OFF", "category": "Security", "tr_note": "GS cookie bulunamadi."}, {"id": "crt", "label": "CRT linking", "value": "Static (/MT)", "category": "Runtime", "tr_note": "CRT statik baglanmis (/MT): dosya buyur ama DLL bagimliligi yok."}, {"id": "ep_frame", "label": "Entry frame", "value": "EBP frame (push ebp; mov ebp,esp)", "category": "Optimization", "tr_note": "Giris noktasi klasik yigin cercevesi kuruyor (/Oy- benzeri, debug tarzi)."}, {"id": "rtti", "label": "RTTI (/GR)", "value": "ON", "category": "Optimization", "tr_note": "Tip bilgisi stringleri (.?AV... MSVC / _ZTS... Itanium) var: RTTI acik (/GR default) - typeid/dynamic_cast tablolari binary'de."}, {"id": "rich", "label": "Rich header", "value": "key=0x9B45DBA5, 10 entries", "category": "Misc", "tr_note": "Microsoft linker toolstamp'i: derleme araclarinin comp.id kayitlari."}],
+  "packer": {
+    "packed": false,
+    "name": "",
+    "overall_entropy": 5.952
+  },
+  "sections": [{"name": ".text", "virtual_size": 159678, "raw_size": 159744, "entropy": 6.633}, {"name": ".rdata", "virtual_size": 35932, "raw_size": 36864, "entropy": 4.701}, {"name": ".data", "virtual_size": 35016, "raw_size": 20480, "entropy": 2.339}, {"name": ".rsrc", "virtual_size": 34848, "raw_size": 36864, "entropy": 4.232}],
+  "imports": [{"dll": "D3D8.DLL", "count": 1}, {"dll": "KERNEL32.DLL", "count": 114}, {"dll": "USER32.DLL", "count": 127}, {"dll": "GDI32.DLL", "count": 39}, {"dll": "COMDLG32.DLL", "count": 1}, {"dll": "WINSPOOL.DRV", "count": 3}, {"dll": "ADVAPI32.DLL", "count": 4}, {"dll": "COMCTL32.DLL", "count": 1}, {"dll": "OLEDLG.DLL", "count": 1}, {"dll": "OLE32.DLL", "count": 15}, {"dll": "OLEPRO32.DLL", "count": 1}, {"dll": "OLEAUT32.DLL", "count": 9}],
+  "resources": {
+    "has_version": true,
+    "has_manifest": false,
+    "version_strings": {}
+  },
+  "overlay_size": 0,
+  "authenticode_signed": false
+}
