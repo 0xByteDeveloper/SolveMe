@@ -1,6 +1,6 @@
 === Metin2 'NEVER DECLARED' arastirmasi - checkpoint durumu ===
-Olusturuldu : 2026-11-14 03:21:29 (Europe/Istanbul)
-Checkpoint  : #2
+Olusturuldu : 2026-11-14 03:21:54 (Europe/Istanbul)
+Checkpoint  : #3
 Hedef repo  : github.com/0xByteDeveloper/SolveMe (research-checkpoints/)
 Guncel adim : S3b - nak_PhaseGame.cod (1.9MB, yerelde scripts/research/) tam tarama: SendSequence proc'u listelenmis mi, hangi Send* proc'larinda call SendSequence kalir; sonrasinda S4 (lineage exe + pedetect_cli Rich header analizi)
 
@@ -15,6 +15,11 @@ wnmqaubb08/globalmetin: degisiklik yok (d1a21b54)
 davidkm2/globalmetin: degisiklik yok (d1a21b54)
 catalin1234121312/Metin2-Astralis: empty
 0xByteDeveloper/SolveMe: empty
+== 2026-11-14 00:21:54 ==
+wnmqaubb08/globalmetin: degisiklik yok (d1a21b54)
+davidkm2/globalmetin: degisiklik yok (d1a21b54)
+catalin1234121312/Metin2-Astralis: empty
+0xByteDeveloper/SolveMe: baseline kaydedildi (76c7d154)
 
 --- Nerede kaldik (STATE.md) ---
 # STATE — Metin2 "CSingleton::Instance() NEVER DECLARED" araştırması
