@@ -1,0 +1,557 @@
+{
+ "file": "/home/z/my-project/scripts/research/nak_PhaseGame.cod",
+ "total_procs": 240,
+ "sendseq_call_total": 53,
+ "sendseq_proc_defined_here": false,
+ "procs_calling_sendseq_count": 53,
+ "procs_calling_sendseq": [
+  {
+   "proc": "?SendScriptAnswerPacket@CPythonNetworkStream@@QAE_NH@Z",
+   "asm_name": "CPythonNetworkStream::SendScriptAnswerPacket, COMDAT",
+   "calls": 1
+  },
+  {
+   "proc": "?SendScriptButtonPacket@CPythonNetworkStream@@QAE_NI@Z",
+   "asm_name": "CPythonNetworkStream::SendScriptButtonPacket, COMDAT",
+   "calls": 1
+  },
+  {
+   "proc": "?SendChatPacket@CPythonNetworkStream@@QAE_NPBDE@Z",
+   "asm_name": "CPythonNetworkStream::SendChatPacket, COMDAT",
+   "calls": 1
+  },
+  {
+   "proc": "?SendSelectItemPacket@CPythonNetworkStream@@QAE_NK@Z",
+   "asm_name": "CPythonNetworkStream::SendSelectItemPacket, COMDAT",
+   "calls": 1
+  },
+  {
+   "proc": "?SendRefinePacket@CPythonNetworkStream@@QAE_NEE@Z",
+   "asm_name": "CPythonNetworkStream::SendRefinePacket, COMDAT",
+   "calls": 1
+  },
+  {
+   "proc": "?SendGuildWithdrawMoneyPacket@CPythonNetworkStream@@QAE_NK@Z",
+   "asm_name": "CPythonNetworkStream::SendGuildWithdrawMoneyPacket, COMDAT",
+   "calls": 1
+  },
+  {
+   "proc": "?SendGuildDepositMoneyPacket@CPythonNetworkStream@@QAE_NK@Z",
+   "asm_name": "CPythonNetworkStream::SendGuildDepositMoneyPacket, COMDAT",
+   "calls": 1
+  },
+  {
+   "proc": "?SendGuildChargeGSPPacket@CPythonNetworkStream@@QAE_NK@Z",
+   "asm_name": "CPythonNetworkStream::SendGuildChargeGSPPacket, COMDAT",
+   "calls": 1
+  },
+  {
+   "proc": "?SendGuildInviteAnswerPacket@CPythonNetworkStream@@QAE_NKE@Z",
+   "asm_name": "CPythonNetworkStream::SendGuildInviteAnswerPacket, COMDAT",
+   "calls": 1
+  },
+  {
+   "proc": "?SendGuildChangeMemberGeneralPacket@CPythonNetworkStream@@QAE_NKE@Z",
+   "asm_name": "CPythonNetworkStream::SendGuildChangeMemberGeneralPacket, COMDAT",
+   "calls": 1
+  },
+  {
+   "proc": "?SendGuildUseSkillPacket@CPythonNetworkStream@@QAE_NKK@Z",
+   "asm_name": "CPythonNetworkStream::SendGuildUseSkillPacket, COMDAT",
+   "calls": 1
+  },
+  {
+   "proc": "?SendGuildChangeMemberGradePacket@CPythonNetworkStream@@QAE_NKE@Z",
+   "asm_name": "CPythonNetworkStream::SendGuildChangeMemberGradePacket, COMDAT",
+   "calls": 1
+  },
+  {
+   "proc": "?SendGuildRefreshCommentsPacket@CPythonNetworkStream@@QAE_NK@Z",
+   "asm_name": "CPythonNetworkStream::SendGuildRefreshCommentsPacket, COMDAT",
+   "calls": 1
+  },
+  {
+   "proc": "?SendGuildDeleteCommentPacket@CPythonNetworkStream@@QAE_NK@Z",
+   "asm_name": "CPythonNetworkStream::SendGuildDeleteCommentPacket, COMDAT",
+   "calls": 1
+  },
+  {
+   "proc": "?SendGuildPostCommentPacket@CPythonNetworkStream@@QAE_NPBD@Z",
+   "asm_name": "CPythonNetworkStream::SendGuildPostCommentPacket, COMDAT",
+   "calls": 1
+  },
+  {
+   "proc": "?SendGuildOfferPacket@CPythonNetworkStream@@QAE_NK@Z",
+   "asm_name": "CPythonNetworkStream::SendGuildOfferPacket, COMDAT",
+   "calls": 1
+  },
+  {
+   "proc": "?SendGuildChangeGradeAuthorityPacket@CPythonNetworkStream@@QAE_NEE@Z",
+   "asm_name": "CPythonNetworkStream::SendGuildChangeGradeAuthorityPacket, COMDAT",
+   "calls": 1
+  },
+  {
+   "proc": "?SendGuildChangeGradeNamePacket@CPythonNetworkStream@@QAE_NEPBD@Z",
+   "asm_name": "CPythonNetworkStream::SendGuildChangeGradeNamePacket, COMDAT",
+   "calls": 1
+  },
+  {
+   "proc": "?SendGuildRemoveMemberPacket@CPythonNetworkStream@@QAE_NK@Z",
+   "asm_name": "CPythonNetworkStream::SendGuildRemoveMemberPacket, COMDAT",
+   "calls": 1
+  },
+  {
+   "proc": "?SendGuildAddMemberPacket@CPythonNetworkStream@@QAE_NK@Z",
+   "asm_name": "CPythonNetworkStream::SendGuildAddMemberPacket, COMDAT",
+   "calls": 1
+  },
+  {
+   "proc": "?SendQuestConfirmPacket@CPythonNetworkStream@@QAE_NEK@Z",
+   "asm_name": "CPythonNetworkStream::SendQuestConfirmPacket, COMDAT",
+   "calls": 1
+  },
+  {
+   "proc": "?SendQuestInputStringPacket@CPythonNetworkStream@@QAE_NPBD@Z",
+   "asm_name": "CPythonNetworkStream::SendQuestInputStringPacket, COMDAT",
+   "calls": 1
+  },
+  {
+   "proc": "?SendAnswerMakeGuildPacket@CPythonNetworkStream@@QAE_NPBD@Z",
+   "asm_name": "CPythonNetworkStream::SendAnswerMakeGuildPacket, COMDAT",
+   "calls": 1
+  },
+  {
+   "proc": "?SendPartyParameterPacket@CPythonNetworkStream@@QAE_NE@Z",
+   "asm_name": "CPythonNetworkStream::SendPartyParameterPacket, COMDAT",
+   "calls": 1
+  },
+  {
+   "proc": "?SendPartyUseSkillPacket@CPythonNetworkStream@@QAE_NEK@Z",
+   "asm_name": "CPythonNetworkStream::SendPartyUseSkillPacket, COMDAT",
+   "calls": 1
+  },
+  {
+   "proc": "?SendPartySetStatePacket@CPythonNetworkStream@@QAE_NKEE@Z",
+   "asm_name": "CPythonNetworkStream::SendPartySetStatePacket, COMDAT",
+   "calls": 1
+  },
+  {
+   "proc": "?SendPartyRemovePacket@CPythonNetworkStream@@QAE_NK@Z",
+   "asm_name": "CPythonNetworkStream::SendPartyRemovePacket, COMDAT",
+   "calls": 1
+  },
+  {
+   "proc": "?SendPartyInviteAnswerPacket@CPythonNetworkStream@@QAE_NKE@Z",
+   "asm_name": "CPythonNetworkStream::SendPartyInviteAnswerPacket, COMDAT",
+   "calls": 1
+  },
+  {
+   "proc": "?SendPartyInvitePacket@CPythonNetworkStream@@QAE_NK@Z",
+   "asm_name": "CPythonNetworkStream::SendPartyInvitePacket, COMDAT",
+   "calls": 1
+  },
+  {
+   "proc": "?SendMessengerRemovePacket@CPythonNetworkStream@@QAE_NPBD0@Z",
+   "asm_name": "CPythonNetworkStream::SendMessengerRemovePacket, COMDAT",
+   "calls": 1
+  },
+  {
+   "proc": "?SendMessengerAddByNamePacket@CPythonNetworkStream@@QAE_NPBD@Z",
+   "asm_name": "CPythonNetworkStream::SendMessengerAddByNamePacket, COMDAT",
+   "calls": 1
+  },
+  {
+   "proc": "?SendMessengerAddByVIDPacket@CPythonNetworkStream@@QAE_NK@Z",
+   "asm_name": "CPythonNetworkStream::SendMessengerAddByVIDPacket, COMDAT",
+   "calls": 1
+  },
+  {
+   "proc": "?SendExchangeExitPacket@CPythonNetworkStream@@QAE_NXZ",
+   "asm_name": "CPythonNetworkStream::SendExchangeExitPacket, COMDAT",
+   "calls": 1
+  },
+  {
+   "proc": "?SendExchangeAcceptPacket@CPythonNetworkStream@@QAE_NXZ",
+   "asm_name": "CPythonNetworkStream::SendExchangeAcceptPacket, COMDAT",
+   "calls": 1
+  },
+  {
+   "proc": "?SendExchangeItemAddPacket@CPythonNetworkStream@@QAE_NUSItemPos@@E@Z",
+   "asm_name": "CPythonNetworkStream::SendExchangeItemAddPacket, COMDAT",
+   "calls": 1
+  },
+  {
+   "proc": "?SendExchangeElkAddPacket@CPythonNetworkStream@@QAE_NK@Z",
+   "asm_name": "CPythonNetworkStream::SendExchangeElkAddPacket, COMDAT",
+   "calls": 1
+  },
+  {
+   "proc": "?SendExchangeStartPacket@CPythonNetworkStream@@QAE_NK@Z",
+   "asm_name": "CPythonNetworkStream::SendExchangeStartPacket, COMDAT",
+   "calls": 1
+  },
+  {
+   "proc": "?SendGiveItemPacket@CPythonNetworkStream@@QAE_NKUSItemPos@@H@Z",
+   "asm_name": "CPythonNetworkStream::SendGiveItemPacket, COMDAT",
+   "calls": 1
+  },
+  {
+   "proc": "?SendOnClickPacket@CPythonNetworkStream@@QAE_NK@Z",
+   "asm_name": "CPythonNetworkStream::SendOnClickPacket, COMDAT",
+   "calls": 1
+  },
+  {
+   "proc": "?SendCharacterPositionPacket@CPythonNetworkStream@@QAE_NE@Z",
+   "asm_name": "CPythonNetworkStream::SendCharacterPositionPacket, COMDAT",
+   "calls": 1
+  },
+  {
+   "proc": "?SendMobileMessagePacket@CPythonNetworkStream@@QAE_NPBD0@Z",
+   "asm_name": "CPythonNetworkStream::SendMobileMessagePacket, COMDAT",
+   "calls": 1
+  },
+  {
+   "proc": "?SendWhisperPacket@CPythonNetworkStream@@QAE_NPBD0@Z",
+   "asm_name": "CPythonNetworkStream::SendWhisperPacket, COMDAT",
+   "calls": 1
+  },
+  {
+   "proc": "?__SendHack@CPythonNetworkStream@@IAE_NPBD@Z",
+   "asm_name": "CPythonNetworkStream::__SendHack, COMDAT",
+   "calls": 1
+  },
+  {
+   "proc": "?SendCharacterStatePacket@CPythonNetworkStream@@QAE_NABUD3DXVECTOR3@@MII@Z",
+   "asm_name": "CPythonNetworkStream::SendCharacterStatePacket, COMDAT",
+   "calls": 1
+  },
+  {
+   "proc": "?SendUseSkillPacket@CPythonNetworkStream@@QAE_NKK@Z",
+   "asm_name": "CPythonNetworkStream::SendUseSkillPacket, COMDAT",
+   "calls": 1
+  },
+  {
+   "proc": "?SendAttackPacket@CPythonNetworkStream@@QAE_NIK@Z",
+   "asm_name": "CPythonNetworkStream::SendAttackPacket, COMDAT",
+   "calls": 1
+  },
+  {
+   "proc": "?SendShootPacket@CPythonNetworkStream@@QAE_NI@Z",
+   "asm_name": "CPythonNetworkStream::SendShootPacket, COMDAT",
+   "calls": 1
+  },
+  {
+   "proc": "?SendAddFlyTargetingPacket@CPythonNetworkStream@@QAE_NKABUD3DXVECTOR3@@@Z",
+   "asm_name": "CPythonNetworkStream::SendAddFlyTargetingPacket, COMDAT",
+   "calls": 1
+  },
+  {
+   "proc": "?SendFlyTargetingPacket@CPythonNetworkStream@@QAE_NKABUD3DXVECTOR3@@@Z",
+   "asm_name": "CPythonNetworkStream::SendFlyTargetingPacket, COMDAT",
+   "calls": 1
+  },
+  {
+   "proc": "?SendTargetPacket@CPythonNetworkStream@@QAE_NK@Z",
+   "asm_name": "CPythonNetworkStream::SendTargetPacket, COMDAT",
+   "calls": 1
+  },
+  {
+   "proc": "?SendFishingPacket@CPythonNetworkStream@@QAE_NH@Z",
+   "asm_name": "CPythonNetworkStream::SendFishingPacket, COMDAT",
+   "calls": 1
+  },
+  {
+   "proc": "?SendBuildPrivateShopPacket@CPythonNetworkStream@@QAE_NPBDABV?$vector@USShopItemTable@@V?$allocator@USShopItemTable@@@std@@@std@@@Z",
+   "asm_name": "CPythonNetworkStream::SendBuildPrivateShopPacket, COMDAT",
+   "calls": 1
+  },
+  {
+   "proc": "?SendClientVersionPacket@CPythonNetworkStream@@QAE_NXZ",
+   "asm_name": "CPythonNetworkStream::SendClientVersionPacket, COMDAT",
+   "calls": 1
+  }
+ ],
+ "send_procs": [
+  {
+   "asm_name": "?SendScriptAnswerPacket@CPythonNetworkStream@@QAE_NH@Z",
+   "comment": "CPythonNetworkStream::SendScriptAnswerPacket, COMDAT",
+   "calls_sendseq": 1
+  },
+  {
+   "asm_name": "?SendScriptButtonPacket@CPythonNetworkStream@@QAE_NI@Z",
+   "comment": "CPythonNetworkStream::SendScriptButtonPacket, COMDAT",
+   "calls_sendseq": 1
+  },
+  {
+   "asm_name": "?SendChatPacket@CPythonNetworkStream@@QAE_NPBDE@Z",
+   "comment": "CPythonNetworkStream::SendChatPacket, COMDAT",
+   "calls_sendseq": 1
+  },
+  {
+   "asm_name": "?SendSelectItemPacket@CPythonNetworkStream@@QAE_NK@Z",
+   "comment": "CPythonNetworkStream::SendSelectItemPacket, COMDAT",
+   "calls_sendseq": 1
+  },
+  {
+   "asm_name": "?SendRefinePacket@CPythonNetworkStream@@QAE_NEE@Z",
+   "comment": "CPythonNetworkStream::SendRefinePacket, COMDAT",
+   "calls_sendseq": 1
+  },
+  {
+   "asm_name": "?SendGuildWithdrawMoneyPacket@CPythonNetworkStream@@QAE_NK@Z",
+   "comment": "CPythonNetworkStream::SendGuildWithdrawMoneyPacket, COMDAT",
+   "calls_sendseq": 1
+  },
+  {
+   "asm_name": "?SendGuildDepositMoneyPacket@CPythonNetworkStream@@QAE_NK@Z",
+   "comment": "CPythonNetworkStream::SendGuildDepositMoneyPacket, COMDAT",
+   "calls_sendseq": 1
+  },
+  {
+   "asm_name": "?SendGuildChargeGSPPacket@CPythonNetworkStream@@QAE_NK@Z",
+   "comment": "CPythonNetworkStream::SendGuildChargeGSPPacket, COMDAT",
+   "calls_sendseq": 1
+  },
+  {
+   "asm_name": "?SendGuildInviteAnswerPacket@CPythonNetworkStream@@QAE_NKE@Z",
+   "comment": "CPythonNetworkStream::SendGuildInviteAnswerPacket, COMDAT",
+   "calls_sendseq": 1
+  },
+  {
+   "asm_name": "?SendGuildChangeMemberGeneralPacket@CPythonNetworkStream@@QAE_NKE@Z",
+   "comment": "CPythonNetworkStream::SendGuildChangeMemberGeneralPacket, COMDAT",
+   "calls_sendseq": 1
+  },
+  {
+   "asm_name": "?SendGuildUseSkillPacket@CPythonNetworkStream@@QAE_NKK@Z",
+   "comment": "CPythonNetworkStream::SendGuildUseSkillPacket, COMDAT",
+   "calls_sendseq": 1
+  },
+  {
+   "asm_name": "?SendGuildChangeMemberGradePacket@CPythonNetworkStream@@QAE_NKE@Z",
+   "comment": "CPythonNetworkStream::SendGuildChangeMemberGradePacket, COMDAT",
+   "calls_sendseq": 1
+  },
+  {
+   "asm_name": "?SendGuildRefreshCommentsPacket@CPythonNetworkStream@@QAE_NK@Z",
+   "comment": "CPythonNetworkStream::SendGuildRefreshCommentsPacket, COMDAT",
+   "calls_sendseq": 1
+  },
+  {
+   "asm_name": "?SendGuildDeleteCommentPacket@CPythonNetworkStream@@QAE_NK@Z",
+   "comment": "CPythonNetworkStream::SendGuildDeleteCommentPacket, COMDAT",
+   "calls_sendseq": 1
+  },
+  {
+   "asm_name": "?SendGuildPostCommentPacket@CPythonNetworkStream@@QAE_NPBD@Z",
+   "comment": "CPythonNetworkStream::SendGuildPostCommentPacket, COMDAT",
+   "calls_sendseq": 1
+  },
+  {
+   "asm_name": "?SendGuildOfferPacket@CPythonNetworkStream@@QAE_NK@Z",
+   "comment": "CPythonNetworkStream::SendGuildOfferPacket, COMDAT",
+   "calls_sendseq": 1
+  },
+  {
+   "asm_name": "?SendGuildChangeGradeAuthorityPacket@CPythonNetworkStream@@QAE_NEE@Z",
+   "comment": "CPythonNetworkStream::SendGuildChangeGradeAuthorityPacket, COMDAT",
+   "calls_sendseq": 1
+  },
+  {
+   "asm_name": "?SendGuildChangeGradeNamePacket@CPythonNetworkStream@@QAE_NEPBD@Z",
+   "comment": "CPythonNetworkStream::SendGuildChangeGradeNamePacket, COMDAT",
+   "calls_sendseq": 1
+  },
+  {
+   "asm_name": "?SendGuildRemoveMemberPacket@CPythonNetworkStream@@QAE_NK@Z",
+   "comment": "CPythonNetworkStream::SendGuildRemoveMemberPacket, COMDAT",
+   "calls_sendseq": 1
+  },
+  {
+   "asm_name": "?SendGuildAddMemberPacket@CPythonNetworkStream@@QAE_NK@Z",
+   "comment": "CPythonNetworkStream::SendGuildAddMemberPacket, COMDAT",
+   "calls_sendseq": 1
+  },
+  {
+   "asm_name": "?SendQuestConfirmPacket@CPythonNetworkStream@@QAE_NEK@Z",
+   "comment": "CPythonNetworkStream::SendQuestConfirmPacket, COMDAT",
+   "calls_sendseq": 1
+  },
+  {
+   "asm_name": "?SendQuestInputStringPacket@CPythonNetworkStream@@QAE_NPBD@Z",
+   "comment": "CPythonNetworkStream::SendQuestInputStringPacket, COMDAT",
+   "calls_sendseq": 1
+  },
+  {
+   "asm_name": "?SendAnswerMakeGuildPacket@CPythonNetworkStream@@QAE_NPBD@Z",
+   "comment": "CPythonNetworkStream::SendAnswerMakeGuildPacket, COMDAT",
+   "calls_sendseq": 1
+  },
+  {
+   "asm_name": "?SendPartyParameterPacket@CPythonNetworkStream@@QAE_NE@Z",
+   "comment": "CPythonNetworkStream::SendPartyParameterPacket, COMDAT",
+   "calls_sendseq": 1
+  },
+  {
+   "asm_name": "?SendPartyUseSkillPacket@CPythonNetworkStream@@QAE_NEK@Z",
+   "comment": "CPythonNetworkStream::SendPartyUseSkillPacket, COMDAT",
+   "calls_sendseq": 1
+  },
+  {
+   "asm_name": "?SendPartySetStatePacket@CPythonNetworkStream@@QAE_NKEE@Z",
+   "comment": "CPythonNetworkStream::SendPartySetStatePacket, COMDAT",
+   "calls_sendseq": 1
+  },
+  {
+   "asm_name": "?SendPartyRemovePacket@CPythonNetworkStream@@QAE_NK@Z",
+   "comment": "CPythonNetworkStream::SendPartyRemovePacket, COMDAT",
+   "calls_sendseq": 1
+  },
+  {
+   "asm_name": "?SendPartyInviteAnswerPacket@CPythonNetworkStream@@QAE_NKE@Z",
+   "comment": "CPythonNetworkStream::SendPartyInviteAnswerPacket, COMDAT",
+   "calls_sendseq": 1
+  },
+  {
+   "asm_name": "?SendPartyInvitePacket@CPythonNetworkStream@@QAE_NK@Z",
+   "comment": "CPythonNetworkStream::SendPartyInvitePacket, COMDAT",
+   "calls_sendseq": 1
+  },
+  {
+   "asm_name": "?SendMessengerRemovePacket@CPythonNetworkStream@@QAE_NPBD0@Z",
+   "comment": "CPythonNetworkStream::SendMessengerRemovePacket, COMDAT",
+   "calls_sendseq": 1
+  },
+  {
+   "asm_name": "?SendMessengerAddByNamePacket@CPythonNetworkStream@@QAE_NPBD@Z",
+   "comment": "CPythonNetworkStream::SendMessengerAddByNamePacket, COMDAT",
+   "calls_sendseq": 1
+  },
+  {
+   "asm_name": "?SendMessengerAddByVIDPacket@CPythonNetworkStream@@QAE_NK@Z",
+   "comment": "CPythonNetworkStream::SendMessengerAddByVIDPacket, COMDAT",
+   "calls_sendseq": 1
+  },
+  {
+   "asm_name": "?SendExchangeExitPacket@CPythonNetworkStream@@QAE_NXZ",
+   "comment": "CPythonNetworkStream::SendExchangeExitPacket, COMDAT",
+   "calls_sendseq": 1
+  },
+  {
+   "asm_name": "?SendExchangeAcceptPacket@CPythonNetworkStream@@QAE_NXZ",
+   "comment": "CPythonNetworkStream::SendExchangeAcceptPacket, COMDAT",
+   "calls_sendseq": 1
+  },
+  {
+   "asm_name": "?SendExchangeItemDelPacket@CPythonNetworkStream@@QAE_NE@Z",
+   "comment": "CPythonNetworkStream::SendExchangeItemDelPacket, COMDAT",
+   "calls_sendseq": 0
+  },
+  {
+   "asm_name": "?SendExchangeItemAddPacket@CPythonNetworkStream@@QAE_NUSItemPos@@E@Z",
+   "comment": "CPythonNetworkStream::SendExchangeItemAddPacket, COMDAT",
+   "calls_sendseq": 1
+  },
+  {
+   "asm_name": "?SendExchangeElkAddPacket@CPythonNetworkStream@@QAE_NK@Z",
+   "comment": "CPythonNetworkStream::SendExchangeElkAddPacket, COMDAT",
+   "calls_sendseq": 1
+  },
+  {
+   "asm_name": "?SendExchangeStartPacket@CPythonNetworkStream@@QAE_NK@Z",
+   "comment": "CPythonNetworkStream::SendExchangeStartPacket, COMDAT",
+   "calls_sendseq": 1
+  },
+  {
+   "asm_name": "?SendGiveItemPacket@CPythonNetworkStream@@QAE_NKUSItemPos@@H@Z",
+   "comment": "CPythonNetworkStream::SendGiveItemPacket, COMDAT",
+   "calls_sendseq": 1
+  },
+  {
+   "asm_name": "?SendOnClickPacket@CPythonNetworkStream@@QAE_NK@Z",
+   "comment": "CPythonNetworkStream::SendOnClickPacket, COMDAT",
+   "calls_sendseq": 1
+  },
+  {
+   "asm_name": "?SendCharacterPositionPacket@CPythonNetworkStream@@QAE_NE@Z",
+   "comment": "CPythonNetworkStream::SendCharacterPositionPacket, COMDAT",
+   "calls_sendseq": 1
+  },
+  {
+   "asm_name": "?SendMobileMessagePacket@CPythonNetworkStream@@QAE_NPBD0@Z",
+   "comment": "CPythonNetworkStream::SendMobileMessagePacket, COMDAT",
+   "calls_sendseq": 1
+  },
+  {
+   "asm_name": "?SendWhisperPacket@CPythonNetworkStream@@QAE_NPBD0@Z",
+   "comment": "CPythonNetworkStream::SendWhisperPacket, COMDAT",
+   "calls_sendseq": 1
+  },
+  {
+   "asm_name": "?SendCharacterStatePacket@CPythonNetworkStream@@QAE_NABUD3DXVECTOR3@@MII@Z",
+   "comment": "CPythonNetworkStream::SendCharacterStatePacket, COMDAT",
+   "calls_sendseq": 1
+  },
+  {
+   "asm_name": "?SendUseSkillPacket@CPythonNetworkStream@@QAE_NKK@Z",
+   "comment": "CPythonNetworkStream::SendUseSkillPacket, COMDAT",
+   "calls_sendseq": 1
+  },
+  {
+   "asm_name": "?SendAttackPacket@CPythonNetworkStream@@QAE_NIK@Z",
+   "comment": "CPythonNetworkStream::SendAttackPacket, COMDAT",
+   "calls_sendseq": 1
+  },
+  {
+   "asm_name": "?SendSpecial@CPythonNetworkStream@@QAE_NHPAX@Z",
+   "comment": "CPythonNetworkStream::SendSpecial, COMDAT",
+   "calls_sendseq": 0
+  },
+  {
+   "asm_name": "?SendShootPacket@CPythonNetworkStream@@QAE_NI@Z",
+   "comment": "CPythonNetworkStream::SendShootPacket, COMDAT",
+   "calls_sendseq": 1
+  },
+  {
+   "asm_name": "?SendAddFlyTargetingPacket@CPythonNetworkStream@@QAE_NKABUD3DXVECTOR3@@@Z",
+   "comment": "CPythonNetworkStream::SendAddFlyTargetingPacket, COMDAT",
+   "calls_sendseq": 1
+  },
+  {
+   "asm_name": "?SendFlyTargetingPacket@CPythonNetworkStream@@QAE_NKABUD3DXVECTOR3@@@Z",
+   "comment": "CPythonNetworkStream::SendFlyTargetingPacket, COMDAT",
+   "calls_sendseq": 1
+  },
+  {
+   "asm_name": "?SendTargetPacket@CPythonNetworkStream@@QAE_NK@Z",
+   "comment": "CPythonNetworkStream::SendTargetPacket, COMDAT",
+   "calls_sendseq": 1
+  },
+  {
+   "asm_name": "?SendSyncPositionElementPacket@CPythonNetworkStream@@QAE_NKKK@Z",
+   "comment": "CPythonNetworkStream::SendSyncPositionElementPacket, COMDAT",
+   "calls_sendseq": 0
+  },
+  {
+   "asm_name": "?SendFishingPacket@CPythonNetworkStream@@QAE_NH@Z",
+   "comment": "CPythonNetworkStream::SendFishingPacket, COMDAT",
+   "calls_sendseq": 1
+  },
+  {
+   "asm_name": "?SendBuildPrivateShopPacket@CPythonNetworkStream@@QAE_NPBDABV?$vector@USShopItemTable@@V?$allocator@USShopItemTable@@@std@@@std@@@Z",
+   "comment": "CPythonNetworkStream::SendBuildPrivateShopPacket, COMDAT",
+   "calls_sendseq": 1
+  },
+  {
+   "asm_name": "?SendClientVersionPacket@CPythonNetworkStream@@QAE_NXZ",
+   "comment": "CPythonNetworkStream::SendClientVersionPacket, COMDAT",
+   "calls_sendseq": 1
+  },
+  {
+   "asm_name": "?SendDragonSoulRefinePacket@CPythonNetworkStream@@QAE_NEPAUSItemPos@@@Z",
+   "comment": "CPythonNetworkStream::SendDragonSoulRefinePacket, COMDAT",
+   "calls_sendseq": 0
+  }
+ ],
+ "sendseq_body_excerpt": ""
+}
